@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.section-1 {
+    width: 100%;
+    height: 680px;
+    background-image: url(./img/Mask\ group.png);
+    background-repeat: no-repeat;
+
+}
+
+.sub-section-1 {
+    color: white;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.476);
+}
+
+
+.sub-section-1 h1 {
+    /* width: 90%; */
+    margin: 0 auto;
+    font-size: 40px;
+}
+
+.section-1-button {
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    background-color: #E8883D;
+    color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 20px;
+    position: absolute;
+    top: 535px;
+    left: 630px;
+}
+
+.section-2 {
+    width: 100%;
+}
+
+.sub-sec-1 {
+    width: 60%;
+    margin: 50px auto;
+    display: flex;
+}
+
+.chem-img {
+    width: 50%;
+
+}
+
+.chem-img img {
+    height: 88%;
+    width: 75%;
+}
+
+.intro {
+    width: 50%;
+}
+
+.intro p {
+    margin-top: 30px;
+}
+
+.intro1 {
+    display: flex;
+}
+.intro1 h1{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.sub-sec-2{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #5188A6;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.sub-sec-2 div{
+    text-align: center;
+}
+
+.sub-sec-2 img {
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px;
+    margin: 15px auto;
+}
+
+.sub-sec-2 h4{
+    color: #E8883D;
+}
+.quote i{
+    color: red;
+}

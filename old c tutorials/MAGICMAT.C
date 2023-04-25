@@ -1,0 +1,79 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int n,dia,row,col,f,a[10][10],i,j;
+	clrscr();
+	printf("Enter n=");
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{
+		for(j=0;j<n;j++)
+		{
+			printf("a[%d][%d]=",i,j);
+			scanf("%d",&a[i][j]);
+		}
+	}
+	for(i=0;i<n;i++)
+	{
+		for(j=0;j<n;j++)
+		{
+			printf("%d ",a[i][j]);
+		}
+		printf("\n");
+	}
+	dia=0;
+	for(i=0;i<n;i++)
+	{
+		for(j=0;j<n;j++)
+		{
+			if(i==j)
+			{
+				dia=dia+a[i][j];
+			}
+		}
+	}
+	for(i=0;i<n;i++)
+	{
+		row=0;
+		for(j=0;j<n;j++)
+		{
+			row=row+a[i][j];
+		}
+		if(dia==row)
+	{
+		f=1;
+	}
+	else
+	{
+		f=0;
+		break;
+	}
+	}
+	for(i=0;i<n;i++)
+	{
+		col=0;
+		for(j=0;j<n;j++)
+		{
+			col=col+a[j][i];
+		}
+		if(dia==col)
+	{
+		f=1;
+	}
+	else
+	{
+		f=0;
+		break;
+	}
+	}
+	if(f==1)
+	{
+		printf("this is magic");
+	}
+	else
+	{
+		printf("this is not magic");
+	}
+	getch();
+}
